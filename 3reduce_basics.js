@@ -12,8 +12,11 @@ var orders=[
 
 // LETS DO IT WITH REDUCE 
 
-var totalAmount = orders.reduce(function(sum,order){
-    return sum+order.amount
-},0)
+// var totalAmount = orders.reduce(function(sum,order){
+//     return sum+order.amount
+// },0)
+
+//if you use arrow funcion
+var totalAmount = orders.reduce((sum,order)=> sum+order.amount,0)
 
 console.log(totalAmount)
